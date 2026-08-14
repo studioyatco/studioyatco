@@ -1,196 +1,675 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studio Yatco — Tech, Keyboards & Cinematography</title>
+    <meta name="description" content="Official website & media kit for Studio Yatco (Lorenz Yatco). Auckland-based creator crafting cinematic reviews on mechanical keyboards, desk setups, cameras, and consumer electronics.">
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        mono: ['"JetBrains Mono"', 'monospace'],
+                    },
+                    colors: {
+                        brand: {
+                            dark: '#080A0F',
+                            card: '#12151E',
+                            cardHover: '#181D2A',
+                            border: '#1F2433',
+                            accent: '#00F0FF',
+                            accentGlow: 'rgba(0, 240, 255, 0.15)',
+                            amber: '#FFB800',
+                            textMuted: '#94A3B8'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #080A0F;
+            color: #F1F5F9;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            overflow-x: hidden;
+        }
+        .glow-effect {
+            box-shadow: 0 0 35px rgba(0, 240, 255, 0.15);
+        }
+        .glass-nav {
+            background: rgba(8, 10, 15, 0.88);
+            backdrop-filter: blur(16px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        .grid-pattern {
+            background-size: 40px 40px;
+            background-image: 
+                linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        }
+        .badge-cyber {
+            border: 1px solid rgba(0, 240, 255, 0.3);
+            background: rgba(0, 240, 255, 0.06);
+            color: #00F0FF;
+        }
+        .instagram-media {
+            background: #12151E !important;
+            border: 1px solid #1F2433 !important;
+            border-radius: 16px !important;
+            margin: 0 auto !important;
+        }
+    </style>
+</head>
+<body class="selection:bg-cyan-500 selection:text-black">
 
-SY
-STUDIO YATCO Tech • Cameras • Desk Aesthetics
-About Video Reels Gear Reviews Audience Stats Media Kit & Rates
-  Let's Collaborate
+    <!-- Navigation Bar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass-nav">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="flex items-center gap-3.5 group">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 via-blue-500 to-indigo-600 flex items-center justify-center font-bold text-black font-mono text-lg shadow-lg group-hover:scale-105 transition-transform">
+                    SY
+                </div>
+                <div>
+                    <span class="font-extrabold tracking-wider text-lg text-white">STUDIO YATCO</span>
+                    <span class="block text-[10px] font-mono text-brand-textMuted tracking-widest uppercase">Tech • Cameras • Desk Aesthetics</span>
+                </div>
+            </a>
 
+            <!-- Desktop Nav Links -->
+            <div class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#about" class="hover:text-cyan-400 transition-colors">About</a>
+                <a href="#featured-reels" class="hover:text-cyan-400 transition-colors">Video Reels</a>
+                <a href="#reviews" class="hover:text-cyan-400 transition-colors">Gear Reviews</a>
+                <a href="#analytics" class="hover:text-cyan-400 transition-colors">Audience Stats</a>
+                <a href="#mediakit" class="hover:text-cyan-400 transition-colors">Media Kit & Rates</a>
+            </div>
 
-AUCKLAND, NZ • 2026 OFFICIAL MEDIA KIT & REVIEWS
-Authentic Tech Stories & Desk Aesthetics.
-Auckland-based tech and lifestyle creator helping leading brands showcase cameras, mechanical keyboards, and workspace gadgets in a relatable, everyday setting.
-View 2026 Rate Card (USD)   Audience Analytics
+            <!-- Social Links & Action Button -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://www.instagram.com/studioyatco" target="_blank" class="p-2.5 rounded-lg bg-slate-900 border border-slate-800 hover:border-slate-700 text-slate-300 hover:text-white transition-colors" title="@studioyatco on Instagram">
+                    <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                </a>
+                <a href="#contact" class="px-5 py-2.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-semibold text-sm transition-all shadow-md hover:shadow-cyan-500/20">
+                    Let's Collaborate
+                </a>
+            </div>
+        </div>
+    </nav>
 
-19.7K
-Total Followers
-6M
-Average Reach
-294K
-Average Plays
-14.4M+
-90-Day Views
+    <!-- Hero Section -->
+    <section class="relative pt-36 pb-20 md:pt-44 md:pb-32 px-6 grid-pattern overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-b from-cyan-500/5 via-transparent to-brand-dark pointer-events-none"></div>
+        <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+            
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full badge-cyber font-mono text-xs tracking-wider">
+                    <span class="w-2 h-2 rounded-full bg-cyan-400 animate-pulse"></span>
+                    AUCKLAND, NZ • 2026 OFFICIAL MEDIA KIT & REVIEWS
+                </div>
+                <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight leading-[1.1]">
+                    Authentic Tech Stories & <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400">Desk Aesthetics</span>.
+                </h1>
+                <p class="text-lg text-slate-400 max-w-xl leading-relaxed">
+                    Auckland-based tech and lifestyle creator helping leading brands showcase cameras, mechanical keyboards, and workspace gadgets in a relatable, everyday setting.
+                </p>
+                <div class="flex flex-wrap gap-4 pt-2">
+                    <a href="#mediakit" class="px-6 py-3.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-400/25 flex items-center gap-2">
+                        View 2026 Rate Card (USD)
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                    </a>
+                    <a href="#analytics" class="px-6 py-3.5 rounded-lg bg-brand-card hover:bg-slate-800 border border-brand-border text-white font-medium text-sm transition-colors">
+                        Audience Analytics
+                    </a>
+                </div>
 
+                <!-- Verified Channel Highlights -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 pt-8 border-t border-slate-800/80">
+                    <div>
+                        <p class="font-mono text-2xl font-bold text-cyan-400">19.7K</p>
+                        <p class="text-xs text-slate-400">Total Followers</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-2xl font-bold text-white">6M</p>
+                        <p class="text-xs text-slate-400">Average Reach</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-2xl font-bold text-amber-400">294K</p>
+                        <p class="text-xs text-slate-400">Average Plays</p>
+                    </div>
+                    <div>
+                        <p class="font-mono text-2xl font-bold text-emerald-400">14.4M+</p>
+                        <p class="text-xs text-slate-400">90-Day Views</p>
+                    </div>
+                </div>
+            </div>
 
+            <!-- Hero Video Reel Direct Embed -->
+            <div class="lg:col-span-5">
+                <div class="relative rounded-2xl p-3 bg-gradient-to-b from-slate-700/50 to-brand-card border border-slate-700/60 shadow-2xl glow-effect">
+                    <div class="relative rounded-xl overflow-hidden bg-slate-900 flex justify-center">
+                        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DY6_utHzGN1/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="width: 100%; max-width: 480px; min-width: 300px; margin: 0;">
+                            <div style="padding: 16px; text-align: center;">
+                                <a href="https://www.instagram.com/reel/DY6_utHzGN1/" target="_blank" class="text-cyan-400 text-sm font-mono hover:underline">
+                                    Loading Featured Reel: @studioyatco &rarr;
+                                </a>
+                            </div>
+                        </blockquote>
+                    </div>
+                </div>
+            </div>
 
-Loading Featured Reel: @studioyatco →
+        </div>
+    </section>
 
-Trusted by Leading Hardware & Camera Brands
-FUJIFILM CANON INSTA360 SAMSUNG NZ ESPRESSO DISPLAYS BENQ ANGRY MIAO
+    <!-- Trusted Brand Partners Strip -->
+    <section id="about" class="py-12 border-y border-slate-800/80 bg-brand-card/40">
+        <div class="max-w-7xl mx-auto px-6">
+            <p class="text-center font-mono text-xs uppercase tracking-widest text-slate-400 mb-8">Trusted by Leading Hardware & Camera Brands</p>
+            <div class="flex flex-wrap items-center justify-center gap-8 md:gap-14 font-mono text-sm font-semibold tracking-wider text-slate-300">
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>FUJIFILM</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>CANON</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>INSTA360</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>SAMSUNG NZ</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>ESPRESSO DISPLAYS</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>BENQ</span>
+                <span class="flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-cyan-400"></span>ANGRY MIAO</span>
+            </div>
+        </div>
+    </section>
 
-Verified Performance
-Audience Analytics & Demographics
-Data Source: Instagram Insights (Last 90 Days)
+    <!-- Detailed Audience Analytics & Demographics (From Media Kit) -->
+    <section id="analytics" class="py-24 px-6 max-w-7xl mx-auto">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Verified Performance</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Audience Analytics & Demographics</h2>
+            </div>
+            <div class="font-mono text-xs text-slate-400 mt-4 md:mt-0">
+                Data Source: Instagram Insights (Last 90 Days)
+            </div>
+        </div>
 
-90-Day Reach Growth
-5,948,591
-↑ +74.0% Growth vs Previous Period
-95.3% non-follower reach rate, driving consistent organic top-of-funnel discovery.
-Age Demographics
-85%
-Core Range: 18–35 Years Old
-High purchasing power among tech professionals, gamers, and content creators.
-Top Geographies
-USA • NZ • IND
-Global Tech Buyer Reach
-Strong North American, Australasian, and global tech consumer footprint.
-Niche Alignment
-84%
-Tech & Gear Reviews Intent
-92% Male / 8% Female audience deeply interested in cameras, keyboards & setups.
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+            
+            <!-- Card 1: Reach Growth -->
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+                <span class="text-xs font-mono text-cyan-400 uppercase">90-Day Reach Growth</span>
+                <h3 class="text-3xl font-extrabold text-white mt-2">5,948,591</h3>
+                <p class="text-xs text-emerald-400 font-mono mt-1">↑ +74.0% Growth vs Previous Period</p>
+                <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
+                    95.3% non-follower reach rate, driving consistent organic top-of-funnel discovery.
+                </div>
+            </div>
 
-Top Performing Video Campaigns ORGANIC REACH
+            <!-- Card 2: Age Distribution -->
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+                <span class="text-xs font-mono text-cyan-400 uppercase">Age Demographics</span>
+                <h3 class="text-3xl font-extrabold text-white mt-2">85%</h3>
+                <p class="text-xs text-slate-300 font-mono mt-1">Core Range: 18–35 Years Old</p>
+                <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
+                    High purchasing power among tech professionals, gamers, and content creators.
+                </div>
+            </div>
 
+            <!-- Card 3: Geographic Distribution -->
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+                <span class="text-xs font-mono text-cyan-400 uppercase">Top Geographies</span>
+                <h3 class="text-2xl font-bold text-white mt-2">USA • NZ • IND</h3>
+                <p class="text-xs text-slate-300 font-mono mt-1">Global Tech Buyer Reach</p>
+                <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
+                    Strong North American, Australasian, and global tech consumer footprint.
+                </div>
+            </div>
 
-794K+
-Camera Lens Review
+            <!-- Card 4: Audience Interest -->
+            <div class="p-6 rounded-2xl bg-brand-card border border-brand-border">
+                <span class="text-xs font-mono text-cyan-400 uppercase">Niche Alignment</span>
+                <h3 class="text-3xl font-extrabold text-white mt-2">84%</h3>
+                <p class="text-xs text-amber-400 font-mono mt-1">Tech & Gear Reviews Intent</p>
+                <div class="mt-4 pt-4 border-t border-slate-800 text-xs text-slate-400">
+                    92% Male / 8% Female audience deeply interested in cameras, keyboards & setups.
+                </div>
+            </div>
 
-380K+
-Street Photographer Reel
+        </div>
 
-215K+
-Desk Setup & Keeb Reel
+        <!-- Featured Previous Work Views Matrix -->
+        <div class="mt-12 p-8 rounded-2xl bg-brand-card border border-brand-border">
+            <h3 class="text-lg font-bold text-white mb-4 flex items-center justify-between">
+                <span>Top Performing Video Campaigns</span>
+                <span class="text-xs font-mono text-cyan-400">ORGANIC REACH</span>
+            </h3>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 text-center font-mono">
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <p class="text-2xl font-bold text-cyan-400">794K+</p>
+                    <p class="text-xs text-slate-400 mt-1">Camera Lens Review</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <p class="text-2xl font-bold text-white">380K+</p>
+                    <p class="text-xs text-slate-400 mt-1">Street Photographer Reel</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <p class="text-2xl font-bold text-amber-400">215K+</p>
+                    <p class="text-xs text-slate-400 mt-1">Desk Setup & Keeb Reel</p>
+                </div>
+                <div class="p-4 rounded-xl bg-slate-900/90 border border-slate-800">
+                    <p class="text-2xl font-bold text-emerald-400">142K+</p>
+                    <p class="text-xs text-slate-400 mt-1">Product Unboxing & B-Roll</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-142K+
-Product Unboxing & B-Roll
+    <!-- Live Instagram Reels Section -->
+    <section id="featured-reels" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800">
+        <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+            <div>
+                <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Showcase & B-Roll</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Latest Instagram Video Reels</h2>
+            </div>
+            <a href="https://www.instagram.com/studioyatco" target="_blank" class="text-sm font-mono text-cyan-400 hover:underline flex items-center gap-1.5 mt-4 md:mt-0">
+                Follow @studioyatco on Instagram &rarr;
+            </a>
+        </div>
 
-Showcase & B-Roll
-Latest Instagram Video Reels
-Follow @studioyatco on Instagram →
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-start">
+            
+            <!-- Post 1 -->
+            <div class="rounded-2xl p-4 bg-brand-card border border-brand-border flex flex-col justify-between">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DRecyVxkfxj/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="width:100%; min-width: 280px; margin:0;">
+                    <div style="padding:16px; text-align:center;">
+                        <a href="https://www.instagram.com/p/DRecyVxkfxj/" target="_blank" class="text-cyan-400 text-xs font-mono hover:underline">
+                            View Post on Instagram &rarr;
+                        </a>
+                    </div>
+                </blockquote>
+                <div class="pt-4 mt-2 border-t border-slate-800 text-xs text-slate-400 font-mono flex items-center justify-between">
+                    <span>EDITORIAL CAROUSEL</span>
+                    <a href="https://www.instagram.com/p/DRecyVxkfxj/" target="_blank" class="text-cyan-400 hover:underline">Open Post</a>
+                </div>
+            </div>
 
+            <!-- Post 2 -->
+            <div class="rounded-2xl p-4 bg-brand-card border border-brand-border flex flex-col justify-between">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DWOIEiikwDc/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="width:100%; min-width: 280px; margin:0;">
+                    <div style="padding:16px; text-align:center;">
+                        <a href="https://www.instagram.com/p/DWOIEiikwDc/" target="_blank" class="text-cyan-400 text-xs font-mono hover:underline">
+                            View Post on Instagram &rarr;
+                        </a>
+                    </div>
+                </blockquote>
+                <div class="pt-4 mt-2 border-t border-slate-800 text-xs text-slate-400 font-mono flex items-center justify-between">
+                    <span>HARDWARE SPOTLIGHT</span>
+                    <a href="https://www.instagram.com/p/DWOIEiikwDc/" target="_blank" class="text-cyan-400 hover:underline">Open Post</a>
+                </div>
+            </div>
 
-View Post on Instagram →
-EDITORIAL CAROUSEL Open Post
+            <!-- Reel 3 -->
+            <div class="rounded-2xl p-4 bg-brand-card border border-cyan-500/40 glow-effect flex flex-col justify-between">
+                <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DY6_utHzGN1/?utm_source=ig_embed&amp;utm_campaign=loading" data-instgrm-version="14" style="width:100%; min-width: 280px; margin:0;">
+                    <div style="padding:16px; text-align:center;">
+                        <a href="https://www.instagram.com/reel/DY6_utHzGN1/" target="_blank" class="text-cyan-400 text-xs font-mono hover:underline">
+                            View Reel on Instagram &rarr;
+                        </a>
+                    </div>
+                </blockquote>
+                <div class="pt-4 mt-2 border-t border-slate-800 text-xs text-cyan-400 font-mono flex items-center justify-between">
+                    <span>CINEMATIC REEL</span>
+                    <a href="https://www.instagram.com/reel/DY6_utHzGN1/" target="_blank" class="text-cyan-400 hover:underline font-bold">Watch Reel</a>
+                </div>
+            </div>
 
-View Post on Instagram →
-HARDWARE SPOTLIGHT Open Post
+        </div>
+    </section>
 
-View Reel on Instagram →
-CINEMATIC REEL Watch Reel
+    <!-- In-Depth Gear Reviews -->
+    <section id="reviews" class="py-24 px-6 bg-brand-card/30 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto">
+            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+                <div>
+                    <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">In-Depth Testing</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Latest Gear Reviews & Tests</h2>
+                </div>
+                <a href="#contact" class="text-sm font-mono text-cyan-400 hover:underline flex items-center gap-1.5 mt-4 md:mt-0">
+                    Submit Gear for Testing &rarr;
+                </a>
+            </div>
 
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                
+                <!-- Review 1: Fujifilm X100VI -->
+                <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-slate-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between font-mono text-xs text-brand-textMuted mb-3">
+                            <span class="px-2.5 py-1 rounded bg-slate-800 text-cyan-400 font-semibold uppercase">Camera Review</span>
+                            <span>FUJIFILM COLLAB</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Fujifilm X100VI: Everyday Storytelling Masterpiece</h3>
+                        <p class="text-sm text-slate-400 mt-2 line-clamp-3">
+                            Evaluating 40.2MP IBIS sensor performance, classic film simulations, leaf shutter acoustics, and compact travel ergonomics for creator workflows.
+                        </p>
+                        
+                        <div class="my-4 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs font-mono space-y-1 text-slate-300">
+                            <div class="flex justify-between"><span class="text-slate-400">Sensor:</span><span>40.2MP X-Trans 5</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Stabilization:</span><span>6.0-Stop In-Body IBIS</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Lens:</span><span>23mm f/2.0 II</span></div>
+                        </div>
 
-In-Depth Testing
-Latest Gear Reviews & Tests
-Submit Gear for Testing →
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
+                            <div>
+                                <span class="font-mono text-emerald-400 font-bold block mb-1">PROS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• Exceptional film color</li>
+                                    <li>• Pocketable form-factor</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-mono text-rose-400 font-bold block mb-1">CONS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• Single SD card slot</li>
+                                    <li>• Limited battery life</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 mt-4 border-t border-slate-800/80">
+                        <span class="font-mono text-xs text-amber-400 font-bold">SCORE: 9.6 / 10</span>
+                        <a href="https://www.instagram.com/studioyatco" target="_blank" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold">View Editorial &rarr;</a>
+                    </div>
+                </div>
 
+                <!-- Review 2: Angry Miao Infinity Mouse -->
+                <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-slate-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between font-mono text-xs text-brand-textMuted mb-3">
+                            <span class="px-2.5 py-1 rounded bg-slate-800 text-cyan-400 font-semibold uppercase">Peripheral Review</span>
+                            <span>ANGRY MIAO</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">Angry Miao Infinity Mouse: Cyberpunk Magnesium Skeleton</h3>
+                        <p class="text-sm text-slate-400 mt-2 line-clamp-3">
+                            Hands-on evaluation with custom wireless contact charging, hollow skeleton chassis weight distribution, and 8000Hz sensor tracking precision.
+                        </p>
+                        
+                        <div class="my-4 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs font-mono space-y-1 text-slate-300">
+                            <div class="flex justify-between"><span class="text-slate-400">Chassis:</span><span>CNC Magnesium Alloy</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Sensor:</span><span>PAW3950 Optical</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Polling:</span><span>Up to 8000Hz</span></div>
+                        </div>
 
-Camera Review FUJIFILM COLLAB
-Fujifilm X100VI: Everyday Storytelling Masterpiece
-Evaluating 40.2MP IBIS sensor performance, classic film simulations, leaf shutter acoustics, and compact travel ergonomics for creator workflows.
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
+                            <div>
+                                <span class="font-mono text-emerald-400 font-bold block mb-1">PROS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• 1-second contact charge</li>
+                                    <li>• Striking visual design</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-mono text-rose-400 font-bold block mb-1">CONS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• Premium pricing</li>
+                                    <li>• Specialized skate shape</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 mt-4 border-t border-slate-800/80">
+                        <span class="font-mono text-xs text-amber-400 font-bold">SCORE: 9.2 / 10</span>
+                        <a href="https://www.instagram.com/studioyatco" target="_blank" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold">Watch Reel &rarr;</a>
+                    </div>
+                </div>
 
-Sensor:40.2MP X-Trans 5
-Stabilization:6.0-Stop In-Body IBIS
-Lens:23mm f/2.0 II
+                <!-- Review 3: BenQ ScreenBar Halo -->
+                <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-slate-700 transition-all flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between font-mono text-xs text-brand-textMuted mb-3">
+                            <span class="px-2.5 py-1 rounded bg-slate-800 text-cyan-400 font-semibold uppercase">Desk Lighting</span>
+                            <span>BENQ</span>
+                        </div>
+                        <h3 class="text-xl font-bold text-white">BenQ ScreenBar Halo: Zero-Glare Curved Desk Illumination</h3>
+                        <p class="text-sm text-slate-400 mt-2 line-clamp-3">
+                            Testing asymmetrical optical design, wireless precision control puck, and back-glow ambient illumination on ultrawide monitors.
+                        </p>
+                        
+                        <div class="my-4 p-3 rounded-xl bg-slate-900/80 border border-slate-800 text-xs font-mono space-y-1 text-slate-300">
+                            <div class="flex justify-between"><span class="text-slate-400">Lighting:</span><span>Asymmetric Optical LED</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Control:</span><span>Wireless Dial Puck</span></div>
+                            <div class="flex justify-between"><span class="text-slate-400">Color Temp:</span><span>2700K - 6500K</span></div>
+                        </div>
 
-PROS
-• Exceptional film color
-• Pocketable form-factor
-CONS
-• Single SD card slot
-• Limited battery life
-SCORE: 9.6 / 10 View Editorial →
+                        <div class="grid grid-cols-2 gap-2 p-3 rounded-xl bg-slate-900/60 border border-slate-800 text-xs">
+                            <div>
+                                <span class="font-mono text-emerald-400 font-bold block mb-1">PROS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• Zero screen reflection</li>
+                                    <li>• Rear ambient bias light</li>
+                                </ul>
+                            </div>
+                            <div>
+                                <span class="font-mono text-rose-400 font-bold block mb-1">CONS</span>
+                                <ul class="space-y-0.5 text-slate-300 text-[11px]">
+                                    <li>• Puck uses AAA batteries</li>
+                                    <li>• Higher price than clones</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between pt-4 mt-4 border-t border-slate-800/80">
+                        <span class="font-mono text-xs text-amber-400 font-bold">SCORE: 9.5 / 10</span>
+                        <a href="https://www.instagram.com/studioyatco" target="_blank" class="text-xs font-mono text-cyan-400 hover:text-cyan-300 font-semibold">View Lighting Test &rarr;</a>
+                    </div>
+                </div>
 
-Peripheral Review ANGRY MIAO
-Angry Miao Infinity Mouse: Cyberpunk Magnesium Skeleton
-Hands-on evaluation with custom wireless contact charging, hollow skeleton chassis weight distribution, and 8000Hz sensor tracking precision.
+            </div>
+        </div>
+    </section>
 
-Chassis:CNC Magnesium Alloy
-Sensor:PAW3950 Optical
-Polling:Up to 8000Hz
+    <!-- Official 2026 Media Kit & Rate Card (Exact USD Pricing) -->
+    <section id="mediakit" class="py-24 px-6 max-w-7xl mx-auto border-t border-slate-800">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">2026 Official Rate Card</span>
+            <h2 class="text-3xl sm:text-5xl font-extrabold tracking-tight mt-2">Collaboration Packages & Rates</h2>
+            <p class="text-slate-400 mt-4 text-sm sm:text-base">
+                Transparent service pricing in USD tailored for tech, camera, desk setup, and consumer hardware brands.
+            </p>
+        </div>
 
-PROS
-• 1-second contact charge
-• Striking visual design
-CONS
-• Premium pricing
-• Specialized skate shape
-SCORE: 9.2 / 10 Watch Reel →
+        <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+            
+            <!-- Tier 1: Static Post -->
+            <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <span class="text-[11px] font-mono text-slate-400 uppercase">Package 01</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Static Post / Carousel</h3>
+                    <div class="my-4">
+                        <span class="text-3xl font-extrabold text-cyan-400 font-mono">$500</span>
+                        <span class="text-xs text-slate-400 font-mono">USD</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li>✓ Retouched Editorial Photo</li>
+                        <li>✓ In-Feed Carousel Feature</li>
+                        <li>✓ Story Mention + Tag</li>
+                        <li>✓ Permanent Feed Post</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-6 w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs font-mono text-center transition-colors">
+                    Book Post &rarr;
+                </a>
+            </div>
 
-Desk Lighting BENQ
-BenQ ScreenBar Halo: Zero-Glare Curved Desk Illumination
-Testing asymmetrical optical design, wireless precision control puck, and back-glow ambient illumination on ultrawide monitors.
+            <!-- Tier 2: Short-Form Video (Featured) -->
+            <div class="relative rounded-2xl p-6 bg-brand-card border-2 border-cyan-400 glow-effect flex flex-col justify-between">
+                <div class="absolute -top-3 left-1/2 -translate-x-1/2 px-3 py-0.5 rounded-full bg-cyan-400 text-black font-mono text-[9px] font-bold uppercase tracking-wider">
+                    Most Popular
+                </div>
+                <div>
+                    <span class="text-[11px] font-mono text-cyan-400 uppercase">Package 02</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Short-Form Video</h3>
+                    <div class="my-4">
+                        <span class="text-3xl font-extrabold text-cyan-400 font-mono">$700</span>
+                        <span class="text-xs text-slate-400 font-mono">USD</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li>✓ 15–60s 4K 60fps Reel</li>
+                        <li>✓ Cinematic Product B-Roll</li>
+                        <li>✓ Dedicated Sound Design</li>
+                        <li>✓ Link in Bio + Story Push</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-6 w-full py-2.5 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-xs font-mono text-center transition-all">
+                    Book Short Reel &rarr;
+                </a>
+            </div>
 
-Lighting:Asymmetric Optical LED
-Control:Wireless Dial Puck
-Color Temp:2700K - 6500K
+            <!-- Tier 3: Long-Form Feature -->
+            <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <span class="text-[11px] font-mono text-slate-400 uppercase">Package 03</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Long-Form Review</h3>
+                    <div class="my-4">
+                        <span class="text-3xl font-extrabold text-cyan-400 font-mono">$1,300</span>
+                        <span class="text-xs text-slate-400 font-mono">USD</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li>✓ Comprehensive Feature</li>
+                        <li>✓ Acoustic & Spec Testing</li>
+                        <li>✓ Written Article on Site</li>
+                        <li>✓ High-Retention Delivery</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-6 w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs font-mono text-center transition-colors">
+                    Book Review &rarr;
+                </a>
+            </div>
 
-PROS
-• Zero screen reflection
-• Rear ambient bias light
-CONS
-• Puck uses AAA batteries
-• Higher price than clones
-SCORE: 9.5 / 10 View Lighting Test →
-2026 Official Rate Card
-Collaboration Packages & Rates
-Transparent service pricing in USD tailored for tech, camera, desk setup, and consumer hardware brands.
+            <!-- Tier 4: Product Photography -->
+            <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <span class="text-[11px] font-mono text-slate-400 uppercase">Package 04</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Product Photography</h3>
+                    <div class="my-4">
+                        <span class="text-3xl font-extrabold text-cyan-400 font-mono">$1,500+</span>
+                        <span class="text-xs text-slate-400 font-mono">USD</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li>✓ Full Retouched Stills Pack</li>
+                        <li>✓ Canon R5 / Fuji Master Glass</li>
+                        <li>✓ Macro Hardware Details</li>
+                        <li>✓ Full Commercial Usage</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-6 w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs font-mono text-center transition-colors">
+                    Book Photos &rarr;
+                </a>
+            </div>
 
+            <!-- Tier 5: Hero Video Production -->
+            <div class="rounded-2xl p-6 bg-brand-card border border-brand-border hover:border-cyan-500/50 transition-all flex flex-col justify-between">
+                <div>
+                    <span class="text-[11px] font-mono text-slate-400 uppercase">Package 05</span>
+                    <h3 class="text-lg font-bold text-white mt-1">Professional Hero Video</h3>
+                    <div class="my-4">
+                        <span class="text-3xl font-extrabold text-cyan-400 font-mono">$2,000+</span>
+                        <span class="text-xs text-slate-400 font-mono">USD</span>
+                    </div>
+                    <ul class="space-y-2 text-xs text-slate-300 border-t border-slate-800 pt-4">
+                        <li>✓ Commercial Hero Asset</li>
+                        <li>✓ Full Lighting & Audio Rig</li>
+                        <li>✓ Paid Ad Licensing Rights</li>
+                        <li>✓ Multi-Format Deliverables</li>
+                    </ul>
+                </div>
+                <a href="#contact" class="mt-6 w-full py-2.5 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-semibold text-xs font-mono text-center transition-colors">
+                    Inquire Hero &rarr;
+                </a>
+            </div>
 
-Package 01
-Static Post / Carousel
-$500 USD
-✓ Retouched Editorial Photo
-✓ In-Feed Carousel Feature
-✓ Story Mention + Tag
-✓ Permanent Feed Post
-Book Post →
+        </div>
+    </section>
 
-Most Popular
-Package 02
-Short-Form Video
-$700 USD
-✓ 15–60s 4K 60fps Reel
-✓ Cinematic Product B-Roll
-✓ Dedicated Sound Design
-✓ Link in Bio + Story Push
-Book Short Reel →
+    <!-- Collaboration Inquiry Form -->
+    <section id="contact" class="py-24 px-6 bg-brand-card/40 border-t border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <span class="font-mono text-xs text-cyan-400 uppercase tracking-widest">Connect & Pitch</span>
+                <h2 class="text-3xl sm:text-4xl font-extrabold tracking-tight mt-2">Let's Collaborate</h2>
+                <p class="text-slate-400 text-sm mt-2">Direct: <a href="mailto:Studioyatco@gmail.com" class="text-cyan-400 hover:underline">Studioyatco@gmail.com</a> • Phone: <a href="tel:+64273706188" class="text-cyan-400 hover:underline">+64 27 370 6188</a> • Auckland, New Zealand</p>
+            </div>
 
-Package 03
-Long-Form Review
-$1,300 USD
-✓ Comprehensive Feature
-✓ Acoustic & Spec Testing
-✓ Written Article on Site
-✓ High-Retention Delivery
-Book Review →
+            <form class="space-y-6 bg-brand-card p-8 sm:p-10 rounded-2xl border border-brand-border">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Your Name / Contact</label>
+                        <input type="text" placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Brand or Organization</label>
+                        <input type="text" placeholder="e.g. Fujifilm / Keychron / BenQ" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                    </div>
+                </div>
 
-Package 04
-Product Photography
-$1,500+ USD
-✓ Full Retouched Stills Pack
-✓ Canon R5 / Fuji Master Glass
-✓ Macro Hardware Details
-✓ Full Commercial Usage
-Book Photos →
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    <div>
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Work Email</label>
+                        <input type="email" placeholder="sarah@brand.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                    </div>
+                    <div>
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Select Deliverable Package</label>
+                        <select class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                            <option>1 Short-Form Video ($700 USD)</option>
+                            <option>1 Static Post / Carousel ($500 USD)</option>
+                            <option>1 Long-Form Video Feature ($1,300 USD)</option>
+                            <option>Product Photography Package ($1,500+ USD)</option>
+                            <option>Professional Hero Video ($2,000+ USD)</option>
+                            <option>Custom Campaign / Multi-Deliverable</option>
+                        </select>
+                    </div>
+                </div>
 
-Package 05
-Professional Hero Video
-$2,000+ USD
-✓ Commercial Hero Asset
-✓ Full Lighting & Audio Rig
-✓ Paid Ad Licensing Rights
-✓ Multi-Format Deliverables
-Inquire Hero →
+                <div>
+                    <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Campaign Brief, Target Launch Dates & Logistics</label>
+                    <textarea rows="4" placeholder="Tell me about your product, desired launch window, and any specific creative requirements..." class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm"></textarea>
+                </div>
 
-Connect & Pitch
-Let's Collaborate
-Direct: Studioyatco@gmail.com • Phone: +64 27 370 6188 • Auckland, New Zealand
+                <button type="button" class="w-full py-4 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-400/20 uppercase font-mono">
+                    Send Collaboration Inquiry
+                </button>
+            </form>
+        </div>
+    </section>
 
-Your Name / Contact
-Brand or Organization
+    <!-- Footer -->
+    <footer class="py-12 border-t border-slate-800 text-center text-xs text-slate-500 font-mono">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>
+                © 2026 STUDIO YATCO • AUCKLAND, NEW ZEALAND
+            </div>
+            <div class="flex items-center gap-6 text-slate-400">
+                <a href="https://www.instagram.com/studioyatco" target="_blank" class="hover:text-cyan-400">@studioyatco</a>
+                <span>•</span>
+                <a href="#reviews" class="hover:text-cyan-400">Gear Reviews</a>
+                <span>•</span>
+                <a href="#mediakit" class="hover:text-cyan-400">2026 Rate Card</a>
+                <span>•</span>
+                <a href="mailto:Studioyatco@gmail.com" class="hover:text-cyan-400">Studioyatco@gmail.com</a>
+            </div>
+        </div>
+    </footer>
 
-Work Email
-Select Deliverable Package 1 Short-Form Video ($700 USD) 1 Static Post / Carousel ($500 USD) 1 Long-Form Video Feature ($1,300 USD) Product Photography Package ($1,500+ USD) Professional Hero Video ($2,000+ USD) Custom Campaign / Multi-Deliverable
-Campaign Brief, Target Launch Dates & Logistics
-Send Collaboration Inquiry
+    <!-- Official Instagram Embed Script for Live Video Playback -->
+    <script async src="//www.instagram.com/embed.js"></script>
 
-© 2026 STUDIO YATCO • AUCKLAND, NEW ZEALAND
-@studioyatco • Gear Reviews • 2026 Rate Card • Studioyatco@gmail.com
+</body>
+</html>
