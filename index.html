@@ -599,7 +599,7 @@
         </div>
     </section>
 
-    <!-- Collaboration Inquiry Form -->
+    <!-- Collaboration Inquiry Form (Connected to Studioyatco@gmail.com) -->
     <section id="contact" class="py-24 px-6 bg-brand-card/40 border-t border-slate-800">
         <div class="max-w-4xl mx-auto">
             <div class="text-center mb-12">
@@ -608,43 +608,50 @@
                 <p class="text-slate-400 text-sm mt-2">Direct: <a href="mailto:Studioyatco@gmail.com" class="text-cyan-400 hover:underline">Studioyatco@gmail.com</a> • Phone: <a href="tel:+64273706188" class="text-cyan-400 hover:underline">+64 27 370 6188</a> • Auckland, New Zealand</p>
             </div>
 
-            <form class="space-y-6 bg-brand-card p-8 sm:p-10 rounded-2xl border border-brand-border">
+            <form id="collab-form" action="https://formsubmit.co/Studioyatco@gmail.com" method="POST" class="space-y-6 bg-brand-card p-8 sm:p-10 rounded-2xl border border-brand-border">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="[Studio Yatco] New Brand Collaboration Inquiry">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Your Name / Contact</label>
-                        <input type="text" placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Your Name / Contact *</label>
+                        <input type="text" name="name" id="form-name" required placeholder="e.g. Sarah Jenkins" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
                     </div>
                     <div>
-                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Brand or Organization</label>
-                        <input type="text" placeholder="e.g. Fujifilm / Keychron / BenQ" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Brand or Organization *</label>
+                        <input type="text" name="brand" id="form-brand" required placeholder="e.g. Fujifilm / Keychron / BenQ" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
                     </div>
                 </div>
 
                 <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
                     <div>
-                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Work Email</label>
-                        <input type="email" placeholder="sarah@brand.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                        <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Work Email *</label>
+                        <input type="email" name="email" id="form-email" required placeholder="sarah@brand.com" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
                     </div>
                     <div>
                         <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Select Deliverable Package</label>
-                        <select class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
-                            <option>1 Short-Form Video ($700 USD)</option>
-                            <option>1 Static Post / Carousel ($500 USD)</option>
-                            <option>1 Long-Form Video Feature ($1,300 USD)</option>
-                            <option>Product Photography Package ($1,500+ USD)</option>
-                            <option>Professional Hero Video ($2,000+ USD)</option>
-                            <option>Custom Campaign / Multi-Deliverable</option>
+                        <select name="package" id="form-package" class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm">
+                            <option value="Short-Form Video ($700 USD)">1 Short-Form Video ($700 USD)</option>
+                            <option value="Static Post / Carousel ($500 USD)">1 Static Post / Carousel ($500 USD)</option>
+                            <option value="Long-Form Video Feature ($1,300 USD)">1 Long-Form Video Feature ($1,300 USD)</option>
+                            <option value="Product Photography ($1,500+ USD)">Product Photography Package ($1,500+ USD)</option>
+                            <option value="Professional Hero Video ($2,000+ USD)">Professional Hero Video ($2,000+ USD)</option>
+                            <option value="Custom Multi-Deliverable Campaign">Custom Campaign / Multi-Deliverable</option>
                         </select>
                     </div>
                 </div>
 
                 <div>
-                    <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Campaign Brief, Target Launch Dates & Logistics</label>
-                    <textarea rows="4" placeholder="Tell me about your product, desired launch window, and any specific creative requirements..." class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm"></textarea>
+                    <label class="block text-xs font-mono text-slate-300 uppercase mb-2">Campaign Brief, Target Launch Dates & Logistics *</label>
+                    <textarea name="brief" id="form-brief" rows="4" required placeholder="Tell me about your product, desired launch window, and any specific creative requirements..." class="w-full px-4 py-3 rounded-lg bg-slate-900 border border-slate-800 text-white focus:outline-none focus:border-cyan-400 text-sm"></textarea>
                 </div>
 
-                <button type="button" class="w-full py-4 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-400/20 uppercase font-mono">
-                    Send Collaboration Inquiry
+                <!-- Submit Button with Live Status Feedback -->
+                <button type="submit" id="submit-btn" class="w-full py-4 rounded-lg bg-cyan-400 hover:bg-cyan-300 text-black font-bold text-sm tracking-wide transition-all shadow-lg hover:shadow-cyan-400/20 uppercase font-mono cursor-pointer flex items-center justify-center gap-2">
+                    <span>Send Collaboration Inquiry</span>
+                    <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
                 </button>
             </form>
         </div>
